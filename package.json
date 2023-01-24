@@ -9,15 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@web3modal/ethereum": "^2.0.0",
-    "@web3modal/react": "^2.0.0",
     "antd": "^5.1.6",
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.0",
     "effector": "^22.5.0",
     "effector-react": "^22.4.0",
-    "ethers": "^5.7.2",
     "https-browserify": "^1.0.0",
     "os-browserify": "^0.3.0",
     "react": "^18.2.0",
@@ -26,7 +23,6 @@
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
     "url": "^0.11.0",
-    "wagmi": "^0.10.14",
     "web3": "^1.8.1"
   },
   "devDependencies": {

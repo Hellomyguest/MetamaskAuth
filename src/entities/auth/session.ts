@@ -1,10 +1,12 @@
-import { createEffect, createEvent, createStore, sample } from "effector";
-import Web3 from "web3";
+import { createEvent, createStore } from "effector";
 
-export const $session = createStore<string | null>(null);
+export type Session = {
+  address: string;
+  balance: string;
+}
+export const $session = createStore<Session | null>(null);
 
-export const signInFx = createEvent<string>();
+export const signInFx = createEvent<Session>();
 
 $session
-  .on(signInFx, (_, payload: string) => payload);
-
+  .on(signInFx, (_, payload: Session) => payload);
